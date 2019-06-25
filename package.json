@@ -1,0 +1,23 @@
+{
+  "name": "rippledev",
+  "version": "1.0.0",
+  "description": "to compile scss and local server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeatdocforce/ripple-dev-portal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeatdocforce/ripple-dev-portal/issues"
+  },
+  "homepage": "https://github.com/jakeatdocforce/ripple-dev-portal#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "http-server": "^0.11.1"
+  }
+}

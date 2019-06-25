@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{target.name}}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>{{ currentpage.name }} - XRP Ledger Dev Portal</title>
+    <!-- <title>{{ currentpage.name }} - XRP Ledger Dev Portal</title> -->
+    <title>{{ currentpage.name }} - {{target.display_name}}</title>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#25A768">
-    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#25A768">
 
     <!-- jQuery -->
-    <script src="assets/vendor/jquery-1.11.1.min.js"></script>
+    <script src="/assets/vendor/jquery-1.11.1.min.js"></script>
 
     <!-- Custom Stylesheets. -->
-    <link href="assets/vendor/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/devportal.css" rel="stylesheet" />
+    <link href="/assets/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="/assets/css/devportal.css" rel="stylesheet" />
 
     <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="/assets/vendor/bootstrap.min.js"></script>
 
     <!-- fontawesome icons -->
-    <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.min.css" />
 
+    <!-- // TODO: uncomment after testing -->
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45576805-2"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45576805-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-45576805-2');
-    </script>
+    </script> -->
 
     {% block head %}
 
@@ -48,7 +50,7 @@
 <body class="xrp-ledger-dev-portal {% if currentpage.sidebar is undefined or currentpage.sidebar != "disabled" %}sidebar-primary {% endif %}{% block bodyclasses %}{% endblock %}">
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-    <a href="{% if target.no_cover is defined and target.no_cover %}/{% else %}index.html{% endif %}" class="navbar-brand"><img src="assets/img/XRPLedger_DevPortal-black.svg" class="logo"  height="44" alt="XRP Ledger Dev Portal" /></a>
+    <a href="{% if target.no_cover is defined and target.no_cover %}/{% else %}index.html{% endif %}" class="navbar-brand"><img src="/assets/img/XRPLedger_DevPortal-black.svg" class="logo"  height="44" alt="XRP Ledger Dev Portal" /></a>
     <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarHolder" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

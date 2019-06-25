@@ -44,6 +44,15 @@
     <div class="absolute_bottom_footer">
       <span>&copy; XRP Ledger Project 2019</span>
       <span><a href="https://raw.githubusercontent.com/ripple/ripple-dev-portal/master/LICENSE">License</a></span>
+
+      <select class="" style="width:200px;" onchange="location = this.value;">
+
+        <option value="/{{currentpage.html}}">English</option>
+        <option value="/jp/{{currentpage.html}}">Japanese</option>
+        <option value="/{{currentpage.html}}">English </option>
+
+       </select>
+
     </div><!-- /.absolute_bottom_footer -->
 
   </section>
@@ -51,4 +60,4 @@
 
 <!-- Jump to top button -->
 <a href="#main_content_wrapper" class="jump-to-top btn btn-primary btn-lg" role="button" title="Jump to top of page">Top</a>
-<script type="text/javascript" src="assets/js/jump-to-top.js"></script>
+<script type="text/javascript" src="/assets/js/jump-to-top.js"></script>
