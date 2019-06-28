@@ -9,27 +9,29 @@
     <title>{{ currentpage.name }} - {{target.display_name}}</title>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% if target.name != "en" %}../{% endif %}assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% if target.name != "en" %}../{% endif %}assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% if target.name != "en" %}../{% endif %}assets/favicons/favicon-32x32.png">
+    <link rel="manifest" href="{% if target.name != "en" %}../{% endif %}assets/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="{% if target.name != "en" %}../{% endif %}favicon.ico">
     <meta name="msapplication-TileColor" content="#25A768">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="{% if target.name != "en" %}../{% endif %}assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#25A768">
 
+    
+
     <!-- jQuery -->
-    <script src="/assets/vendor/jquery-1.11.1.min.js"></script>
+    <script src="{% if target.name != "en" %}../{% endif %}assets/vendor/jquery-1.11.1.min.js"></script>
 
     <!-- Custom Stylesheets. -->
-    <link href="/assets/vendor/bootstrap.css" rel="stylesheet" />
-    <link href="/assets/css/devportal.css" rel="stylesheet" />
+    <link href="{% if target.name != "en" %}../{% endif %}assets/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="{% if target.name != "en" %}../{% endif %}assets/css/devportal.css" rel="stylesheet" />
 
     <!-- Bootstrap JS -->
-    <script src="/assets/vendor/bootstrap.min.js"></script>
+    <script src="{% if target.name != "en" %}../{% endif %}assets/vendor/bootstrap.min.js"></script>
 
     <!-- fontawesome icons -->
-    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{% if target.name != "en" %}../{% endif %}assets/vendor/fontawesome/css/font-awesome.min.css" />
 
     <!-- // TODO: uncomment after testing -->
     <!-- Google Analytics -->
@@ -50,7 +52,7 @@
 <body class="xrp-ledger-dev-portal {% if currentpage.sidebar is undefined or currentpage.sidebar != "disabled" %}sidebar-primary {% endif %}{% block bodyclasses %}{% endblock %}">
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-    <a href="{% if target.no_cover is defined and target.no_cover %}/{% else %}index.html{% endif %}" class="navbar-brand"><img src="/assets/img/XRPLedger_DevPortal-black.svg" class="logo"  height="44" alt="XRP Ledger Dev Portal" /></a>
+    <a href="{% if target.no_cover is defined and target.no_cover %}/{% else %}index.html{% endif %}" class="navbar-brand"><img src="{% if target.name != "en" %}../{% endif %}assets/img/XRPLedger_DevPortal-black.svg" class="logo"  height="44" alt="XRP Ledger Dev Portal" /></a>
     <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarHolder" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,15 +69,15 @@
           {% endif %}
         {% endfor %}
         <li class="nav-item">
-          <a class="nav-link" href="/blog/">Blog</a>
+          <a class="nav-link" href="/blog/">{{ target.template_base.blog }}</a>
         </li>
       </ul><!-- /.navbar-nav -->
       {% include 'template-github-edit.html' %}
       <form class="navbar-form navbar-right" id="navbar-search" role="search" method="get" action="https://www.google.com/search">
         <div class="form-inline">
-          <label class="sr-only" for="topsearchbar">Search site with Google...</label>
+          <label class="sr-only" for="topsearchbar">{{ target.template_base.search }}</label>
           <input name="q" value="site:xrpl.org" type="hidden">
-          <input id="topsearchbar" name="q" type="text" class="form-control" class="top-search" placeholder="Search site with Google...">
+          <input id="topsearchbar" name="q" type="text" class="form-control" class="top-search" placeholder="{{ target.template_base.search }}">
           <button type="submit" class="btn btn-default fa fa-search">&nbsp;</button>
         </div>
       </form>

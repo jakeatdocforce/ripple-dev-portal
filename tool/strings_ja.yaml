@@ -1,0 +1,16 @@
+# extracted from templates
+template_base:
+    blog: ブログ
+    search: Googleで検索サイト...
+
+template_landing_docs:
+    header: XRP元帳ドキュメント
+    blurb1: <p class="blurb"> 私たちのドキュメントに飛び込み、XRP元帳との統合を始めましょう.</p>
+    blurb2: <p class="blurb">カテゴリ別にブラウズするか、完全なドキュメントインデックスに直接スキップしてください <a href="#full-doc-index">full documentation index</a>.</p>
+    view_all: 全て見る
+    full_doc_index: 完全なドキュメンテーションインデックス
+
+template_footer:
+    careers: リップルキャリア
+    github: GitHubのリップル
+    resources: XRPのリソース

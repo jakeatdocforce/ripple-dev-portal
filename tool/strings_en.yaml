@@ -1,0 +1,16 @@
+# extracted from templates
+template_base:
+    blog: Blog
+    search: Search site with Google...
+
+template_landing_docs:
+    header: XRP Ledger Documentation
+    blurb1: <p class="blurb"> Dive into our documentation and start integrating with the XRP Ledger.</p>
+    blurb2: <p class="blurb">Browse by category, or skip straight to the <a href="#full-doc-index">full documentation index</a>.</p>
+    view_all: View All
+    full_doc_index: Full Documentation Index
+
+template_footer:
+    careers: Ripple Careers 
+    github: Ripple on GitHub
+    resources: XRP Resources

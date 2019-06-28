@@ -1,31 +1,13 @@
-{% extends "template-base.html" %}
-{% block head %}
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-{% endblock %}
-
-{% block bodyclasses %}no-sidebar{% endblock %}
-{% block mainclasses %}landing{% endblock %}
-
-{% block breadcrumbs %}{% endblock %}
-
-{% block main %}
   <section class="container-fluid card-grid card-grid-2x2">
       <div class="section-hero card justify-content-end">
         <div>
-            <h1 class="display-4">インターネットの価値を高めます。</h1>
-            <div class="blurb">
-                <p><a href="#xrp_ledger_intro">XRP元帳</a> は誰でも使用できるオープンソース技術です。</p>
-                <p>ここに提供されているツールと情報を使用して、オープンソースプラットフォームと統合して貢献してください</p>
-                <h5>もっと欲しい？</h5>
-                <p>XRP Ledgerのウェビナー、リリース、およびドキュメントに関する最新情報を入手してください。</p>
-            </div><!--/.blurb-->
+          <h1 class="display-4">Powering the Internet of Value.</h1>
+          <div class="blurb">
+            <p>The <a href="#xrp_ledger_intro">XRP Ledger</a> is open-source technology that anyone can use.</p>
+            <p>Use the tools and information provided here to integrate with and contribute to the open-source platform.</p>
+            <h5>Want more?</h5>
+            <p>Get updates about XRP Ledger webinars, releases, and documentation!</p>
+          </div><!--/.blurb-->
           <a class="btn btn-outline-secondary external-link" href="https://goo.gl/forms/sHMFxU8dKiTUaltE3" target="_blank">Sign up! <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </div>
       </div><!--/.section-hero-->
@@ -33,53 +15,53 @@
       {% set flag_n = cycler(* range(1,99)) %}
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">XRP Ledgerのウェビナー、リリース、およびドキュメントに関する最新情報を入手してください。</h3>
+          <h3 class="card-title">Get Started with XRP Ledger APIs</h3>
         </div><!--/.card-header-->
         <div class="card-body">
-            <p>XRP Ledgerと対話するために利用可能なAPIとライブラリーを始めましょう</p>
+          <p>Get started with the APIs and libraries available for interacting with the XRP Ledger.</p>
         </div><!--/.card-body-->
         <div class="card-footer">
-          <a href="get-started-with-the-rippled-api.html" class="btn btn-outline-secondary">はじめに</a>
+          <a href="get-started-with-the-rippled-api.html" class="btn btn-outline-secondary">Get Started</a>
         </div><!--/.card-footer-->
         <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
       </div><!--/.card-->
 
       <div class="card pr-0">
         <div class="card-header">
-            <h3 class="card-title"><a href="concepts.html">仕組みを学ぶ</a></h3>
+          <h3 class="card-title"><a href="concepts.html">Learn How It Works</a></h3>
         </div><!--/.card-header-->
         <div class="card-body">
           <div class="curated-links">
             <ul>
-                <li><a href="intro-to-consensus.html">合意へのイントロ</a></li>
-                <li><a href="xrp.html">XRPについて</a></li>
-                <li><a href="payment-system-basics.html">支払いシステムの基本</a></li>
-                <li><a href="decentralized-exchange.html">分散型エクスチェンジ</a></li>
+              <li><a href="intro-to-consensus.html">Intro to Consensus</a></li>
+              <li><a href="xrp.html">About XRP</a></li>
+              <li><a href="payment-system-basics.html">Payment System Basics</a></li>
+              <li><a href="decentralized-exchange.html">Decentralized Exchange</a></li>
             </ul>
           </div><!--/.curated-links-->
         </div><!--/.card-body-->
         <div class="card-footer">
-            <a href="concepts.html" class="btn btn-outline-secondary">すべての概念</a>
+          <a href="concepts.html" class="btn btn-outline-secondary">All Concepts</a>
         </div><!--/.card-footer-->
         <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
       </div><!--/.card-->
 
       <div class="card">
         <div class="card-header">
-            <h3 class="card-title"><a href="docs.html">ドキュメントを読む</a></h3>
+          <h3 class="card-title"><a href="docs.html">Read Documentation</a></h3>
         </div><!--/.card-header-->
         <div class="card-body">
           <div class="curated-links">
             <ul>
-                <li><a href="references.html">APIリファレンス</a></li>
-                <li><a href="concepts.html">概念</a></li>
-                <li><a href="tutorials.html">チュートリアル</a></li>
-                <li><a href="docs.html#full-doc-index">チュートリアル</a></li>
+              <li><a href="references.html">API References</a></li>
+              <li><a href="concepts.html">Concepts</a></li>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <li><a href="docs.html#full-doc-index">Full Doc Index</a></li>
             </ul>
           </div><!--/.curated-links-->
         </div><!--/.card-body-->
         <div class="card-footer">
-            <a href="docs.html" class="btn btn-outline-secondary">すべてのドキュメント</a>
+          <a href="docs.html" class="btn btn-outline-secondary">All Docs</a>
         </div><!--/.card-footer-->
         <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
       </div><!--/.card-->
@@ -90,11 +72,11 @@
           <h3 class="card-title">Explore the XRP Ledger</h3>
         </div><!--/.card-header-->
         <div class="card-body">
-            <p>XRPLエクスプローラを使用して、元帳アクティビティの流れを確認し、バリデータのステータスを確認します。</p>
+          <p>Use the XRPL Explorer to view a stream of ledger activity and see validator statuses.</p>
         </div><!--/.card-body-->
         <div class="card-footer">
           <div class="readmore">
-            <a href="https://explorer.xrpl.org/" class="btn btn-outline-secondary">エクスプローラに行く</a>
+            <a href="https://explorer.xrpl.org/" class="btn btn-outline-secondary">Go to the Explorer</a>
           </div>
         </div><!--/.card-footer-->
         <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
@@ -105,18 +87,17 @@
 
   <section class="container-fluid card-grid">
     <div class="card pl-0">
-        <div class="card-header">
-            <h2><a href="/blog/">XRP元帳ブログ</a></h2>
-        </div><!--/.card-header-->
-        <div class="card-body">
+      <div class="card-header">
+        <h2><a href="/blog/">XRP Ledger Blog</a></h2>
+      </div><!--/.card-header-->
+      <div class="card-body">
         <div class="blurb">
-                <p>ブログを参照して、以下を含む最新のXRP元帳情報を入手してください。 <a href="/blog/label/rippled-release-notes.html">リリースノート</a>, <a href="/blog/label/amendments.html">
-                修正</a> XRP元帳プロトコルへ, <a href="/blog/label/features.html">XRP元帳プロトコルへ</a> XRPエキスパートによる.</p>
+          <p>Visit the blog for the latest XRP Ledger info, including <a href="/blog/label/rippled-release-notes.html">Release Notes</a>, <a href="/blog/label/amendments.html">Amendments</a> to the XRP Ledger protocol, <a href="/blog/label/features.html">Feature articles</a> from XRP experts, and more.</p>
         </div>
-            </div>
-        <div class="card-footer">
-            <a href="/blog/" class="btn btn-outline-secondary">ブログを見る</a>
-        </div>
+      </div>
+      <div class="card-footer">
+        <a href="/blog/" class="btn btn-outline-secondary">View Blog</a>
+      </div>
     </div>
   </section>
 
@@ -124,59 +105,59 @@
   <section class="container-fluid card-grid card-grid-2x4" id="xrp_ledger_intro">
     <div class="card section-hero pl-0">
       <div class="card-header">
-        <h2><a href="xrp-ledger-overview.html">XRP元帳とは何ですか？</a></h2>
+        <h2><a href="xrp-ledger-overview.html">What is the XRP Ledger?</a></h2>
       </div><!--/.card-header-->
       <div class="card-body">
-            <p>XRP元帳は、ピアツーピアサーバーのネットワークを利用した分散型の暗号化元帳です。これは、世界中で使用されているさまざまな通貨をつなぐように設計されたデジタル資産であるXRPの本拠地です。</p>
+        <p>The XRP Ledger is a decentralized cryptographic ledger, powered by a network of peer-to-peer servers. It is the home of XRP, a digital asset designed to bridge the many different currencies in use worldwide.</p>
       </div>
     </div><!--/.section-hero-->
 
     <a href="xrp-ledger-overview.html#the-digital-asset-for-payments" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-digital-asset.svg" alt="(digital asset icon)" /></div>
-        <div class="card-footer"><h3>支払いのためのデジタル資産</h3></div>
-        <div class="flag-vertical">01</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-digital-asset.svg" alt="(digital asset icon)" /></div>
+      <div class="card-footer"><h3>The Digital Asset for Payments</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
-      
+
     <a href="xrp-ledger-overview.html#censorship-resistant-transaction-processing" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-censorship-resistant.svg" alt="(censorship resistance icon)" /></div>
-        <div class="card-footer"><h3>検閲耐性トランザクション処理</h3></div>
-        <div class="flag-vertical">02</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-censorship-resistant.svg" alt="(censorship resistance icon)" /></div>
+      <div class="card-footer"><h3>Censorship-Resistant Transaction Processing</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
-      
+
     <a href="xrp-ledger-overview.html#fast-efficient-consensus-algorithm" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-fast-algorithm.svg" alt="(consensus algorithm icon)" /></div>
-        <div class="card-footer"><h3>高速で効率的な合意アルゴリズム</h3></div>
-        <div class="flag-vertical">03</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-fast-algorithm.svg" alt="(consensus algorithm icon)" /></div>
+      <div class="card-footer"><h3>Fast, Efficient Consensus Algorithm</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
     <a href="xrp-ledger-overview.html#finite-xrp-supply" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-finite.svg" alt="(xrp supply icon)" /></div>
-        <div class="card-footer"><h3>有限XRPサプライ</h3></div>
-        <div class="flag-vertical">04</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-finite.svg" alt="(xrp supply icon)" /></div>
+      <div class="card-footer"><h3>Finite XRP Supply</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
     <a href="xrp-ledger-overview.html#responsible-software-governance" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-responsible.svg" alt="(governance icon)" /></div>
-        <div class="card-footer"><h3>責任あるソフトウェアガバナンス</h3></div>
-        <div class="flag-vertical">05</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-responsible.svg" alt="(governance icon)" /></div>
+      <div class="card-footer"><h3>Responsible Software Governance</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
     <a href="xrp-ledger-overview.html#secure-adaptable-cryptography" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-secure.svg" alt="(cryptography icon)" /></div>
-        <div class="card-footer"><h3>安全で適応性のある暗号化</h3></div>
-        <div class="flag-vertical">06</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-secure.svg" alt="(cryptography icon)" /></div>
+      <div class="card-footer"><h3>Secure, Adaptable Cryptography</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
     <a href="xrp-ledger-overview.html#modern-features-for-smart-contracts" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-modern-smart-contracts.svg" alt="(smart contracts icon)" /></div>
-        <div class="card-footer"><h3>スマートコントラクトの最新機能</h3></div>
-        <div class="flag-vertical">07</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-modern-smart-contracts.svg" alt="(smart contracts icon)" /></div>
+      <div class="card-footer"><h3>Modern Features for Smart Contracts</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
     <a href="xrp-ledger-overview.html#on-ledger-decentralized-exchange" class="card">
-        <div class="card-header"><img class="card-img-top" src="/assets/img/icon-xrp-on-ledger-decentralized.svg" alt="(decentralized exchange icon)" /></div>
-        <div class="card-footer"><h3>元帳分散型為替</h3></div>
-        <div class="flag-vertical">08</div>
+      <div class="card-header"><img class="card-img-top" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-on-ledger-decentralized.svg" alt="(decentralized exchange icon)" /></div>
+      <div class="card-footer"><h3>On-Ledger Decentralized Exchange</h3></div>
+      <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
     </a><!--/.card-->
 
   </section><!--/#xrp_ledger_intro-->
@@ -184,17 +165,17 @@
 
   <section class="container-fluid card-grid card-grid-2x2">
     <div class="section-hero card pl-0">
-        <h2>ビルドを開始</h2>
-        <div class="blurb">
-            <p>XRP元帳で一般的なタスクを実行するためのステップバイステップのガイダンスを得るには、これらのチュートリアルを使用してください。</p>
-        </div>
+      <h2>Start BUIDLing</h2>
+      <div class="blurb">
+        <p>Use these tutorials to get step-by-step guidance to perform common tasks with the XRP Ledger.</p>
+      </div>
     </div><!--/.section-hero-->
 
     {% set flag_n = cycler(* range(1,99)) %}
     <div class="card">
       <div class="card-header">
           <a href="list-xrp-in-your-exchange.html" class="header-link">
-            <img class="image-icon" src="assets/img/icon-xrp-list-xrp.svg" >
+            <img class="image-icon" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-list-xrp.svg" >
             <h3 class="card-title">List XRP on Your Exchange</h3>
         </a>
       </div><!--/.card-header-->
@@ -212,7 +193,7 @@
     <div class="card">
       <div class="card-header">
         <a href="send-xrp.html" class="header-link">
-          <img class="image-icon" src="assets/img/icon-xrp-send-xrp.svg" >
+          <img class="image-icon" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-send-xrp.svg" >
           <h3 class="card-title">Send XRP</h3>
         </a>
       </div><!--/.card-header-->
@@ -230,7 +211,7 @@
     <div class="card">
       <div class="card-header">
         <a href="manage-the-rippled-server.html" class="header-link">
-          <img class="image-icon" src="assets/img/icon-xrp-run-rippled.svg" >
+          <img class="image-icon" src="{% if target.name != "en" %}../{% endif %}assets/img/icon-xrp-run-rippled.svg" >
           <h3 class="card-title">Run a rippled Server</h3>
         </a>
         </div><!--/.card-header-->
@@ -279,7 +260,7 @@
 
     <div class="card interledger-link">
       <div class="card-header">
-          <img class="project-icon" src="assets/img/ilp_logo.svg" />
+          <img class="project-icon" src="{% if target.name != "en" %}../{% endif %}assets/img/ilp_logo.svg" />
           <h3 class="card-title">Interledger</h3>
       </div><!--/.card-header-->
       <div class="card-body">
@@ -293,7 +274,7 @@
 
     <div class="card xpring-link">
         <div class="card-header">
-            <img class="project-icon" src="assets/img/xpring-logo.svg" alt="Xpring" />
+            <img class="project-icon" src="{% if target.name != "en" %}../{% endif %}assets/img/xpring-logo.svg" alt="Xpring" />
             <h3 class="card-title">Xpring</h3>
         </div><!--/.card-header-->
         <div class="card-body">
@@ -306,4 +287,4 @@
       </div><!--/.card-->
 
   </section><!-- / Related Projects -->
-{% endblock %}
+

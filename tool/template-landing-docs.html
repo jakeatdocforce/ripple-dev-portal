@@ -4,9 +4,9 @@
 
 {% block main %}
   <section class="container-fluid bg-white section-hero pb-4 pt-2">
-    <h1 class="main-page-header">XRP Ledger Documentation</h1>
-    <p class="blurb">Dive into our documentation and start integrating with the XRP Ledger.</p>
-    <p class="blurb">Browse by category, or skip straight to the <a href="#full-doc-index">full documentation index</a>.</p>
+    <h1 class="main-page-header">{{ target.template_landing_docs.header }}</h1>
+    {{ target.template_landing_docs.blurb1 }}
+    {{ target.template_landing_docs.blurb2 }}
   </section>
 
   <section class="container-fluid card-grid card-grid-3xN doc-landing-section">
@@ -30,7 +30,7 @@
             </div><!--/.card-body-->
             <div class="card-footer">
               <div class="readmore">
-                <a class="btn btn-outline-secondary" href="{{doc_type_top.html}}">View All {{doc_type_top.name}}</a>
+                <a class="btn btn-outline-secondary" href="{{doc_type_top.html}}">{{ target.template_landing_docs.view_all }} {{doc_type_top.name}}</a>
               </div>
             </div><!--/.card-footer-->
             <div class="flag-vertical">{{"%02d"|format(flag_n.next())}}</div>
@@ -43,7 +43,7 @@
   </section>
 
   <section class="container-fluid doc-index">
-    <h2 id="full-doc-index">Full Documentation Index</h2>
+    <h2 id="full-doc-index">{{ target.template_landing_docs.full_doc_index }}</h2>
     <div class="row">
       <div class="col-md-8">
         {% set parent_page = currentpage %}
